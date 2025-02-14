@@ -1,2 +1,2 @@
-This is SHREYA JHA
-Aiming to be a full-stacker developer...
+# SHREYA JHA
+
