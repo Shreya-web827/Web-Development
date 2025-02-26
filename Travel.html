@@ -1,0 +1,137 @@
+<!-- Create an html form for a travel website to book a vacation  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL WEBSITE</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:goldenrod;
+        margin: 0%;
+        padding: 20px;
+    }
+    form{
+        background-color:black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    h1,h2{
+        text-align: center;
+        color:rgb(227, 22, 22);
+    }
+    label{
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: antiquewhite;
+    }
+    p{
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: antiquewhite;
+    }
+     input[type="text"],
+     input[type="tel"],
+     input[type="number"],
+     input[type="email"],
+     input[type="date"]{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+     }
+     input[type="text"]:focus,
+     input[type="tel"]:focus,
+     input[type="number"]:focus,
+     input[type="email"]:focus,
+     input[type="date"]:focus{
+        border-color:darkgoldenrod ;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0,123,255,0.5);
+     }
+     input[type="submit"]{
+        width: 100%;
+        padding:10px;
+        background-color: saddlebrown;
+        border:none;
+        font-size: 16px;
+        cursor: pointer
+     }
+     input[type="submit"]:hover{
+        background-color: #0056b3;
+     }
+</style>
+</head>
+<body>
+    <h1>ENJOY YOUR HOLIDAY</h1>
+     <H2>FILL UP THIS FORM TO EASE YOUR TRAVELLING NOW</H2>
+     <form action="">
+        <div>
+            <label for="Name">Name</label>
+            <input type="text" id="Name" placeholder="Enter your name here" required>
+        </div>
+
+        <div>
+        <label for="number">Number of traveller</label>
+        <input type="number" id="number" placeholder="Enter the no of traveller" required>
+        </div>
+
+        <div>
+            <label for="anotherTraveller"> Another traveller's name</label>
+            <input type="text" id="anotherTraveller" placeholder="Enter another traveller's name if any">
+        </div>
+
+        <div>
+            <label for="Phone"> Phone Number</label>
+            <input type="tel" id="Phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" id="Email" placeholder="Enter your email id" required>
+        </div>
+
+        <div>
+            <label for="Place">Place(s) you will visit</label>
+            <input type="text" id="Place" placeholder="Enter name of places" required>
+        </div>
+
+        <div>
+            <label for="Days">No. of days you will stay in travel</label>
+            <input type="number" id="Days" placeholder="Enter the no of days" required>
+        </div>
+
+        <div>
+            <label for="fromDate"> Travel start from date</label>
+            <input type="date" id="fromDate" placeholder="Enter starting date" required>
+        </div>
+         <label for="toDate">Travel end date</label>
+         <input type="date" id="toDate" placeholder="Enter Ending Date" required>
+        <div>
+            <p>Facilities You Want</p>
+            <input type="checkbox" name="Facility" id="Hotel" value="Hotel">
+            <label for="Hotel">Hotel</label>
+            <input type="checkbox" name="Facility" id="Food" value="Food">
+            <label for="Food">Food</label>
+            <input type="checkbox" name="Facility" id="Car" value="Car">
+            <label for="Car">Car</label> 
+            <input type="checkbox" name="Facility" id="Others" value="Others">
+            <label for="Others">Others</label> <br>
+            <label for="OtherFacility">Mention the other facility you want</label>
+            <textarea name="Other facility" id="OtherFacility" cols="20" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="submit">
+        </div>
+     </form>
+</body>
+</html>
