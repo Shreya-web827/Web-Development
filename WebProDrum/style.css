@@ -1,0 +1,46 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.title{
+    font-family: serif;
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+}
+.set{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 450px;
+    width: 100%;
+}
+.drum{
+    height:200px;
+    width:200px;
+    background-color: maroon;
+    color: white;
+    font-size: 60px;
+    margin: 40px;
+}
+.w{
+    background-image: url("../WebProDrum/photoo/guitarr.jpg");
+    background-size:contain;
+    
+}
+.a{
+    background-image: url("../WebProDrum/photoo/Flute.jpg");
+    background-size: cover;
+}
+.s{
+    background-image: url("../WebProDrum/photoo/drum.png");
+    background-size: cover;
+}
+.d{
+    background-image: url("../WebProDrum/photoo/percussion.jpg");
+    background-size: cover;
+}
+.pressed{
+    box-shadow:0px 3px 4px 0px firebrick;
+    opacity: 0.5;
+}
